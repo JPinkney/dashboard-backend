@@ -30,9 +30,8 @@ import { initialize, initializeNodeConfig } from "./init";
 import { routingClass } from "./config";
 
 // TODO add detection for openshift or kubernetes, we can probably just expose the devworkspace-client api to get that done for us
-// TODO add deploy files for openshift
-// TODO add deploy files for kubernetes
 // TODO add service account for kubernetes with all the needed permissions
+// TODO make it work on kubernetes
 
 // Initialize the server and exit if any needed environment variables aren't found
 initialize();
