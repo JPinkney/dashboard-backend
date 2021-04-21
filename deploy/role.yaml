@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: dashboard-backend
+  labels:
+    app.kubernetes.io/name: dashboard-backend
+    app.kubernetes.io/part-of: dashboard-backend
+rules:
+  - apiGroups:
+    - project.openshift.io
+    resources:
+    - projects
+    verbs:
+    - get
+    - create
